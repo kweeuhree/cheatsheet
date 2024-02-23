@@ -1,0 +1,81 @@
+.top-container {
+    border: solid blue;
+    /* height: 42vh; */
+    margin: 1em;
+    padding: 1em;
+}
+
+.middle-container {
+    border: solid green;
+    height: 42vh;
+    margin: 1em;
+}
+
+.low-container {
+    border: solid purple;
+    height: 42vh;
+    margin: 1em;
+}
+
+.phase-container {
+    border: 1px solid black;
+}
+
+.phase {
+    display: flex;
+    padding: 1em;
+}
+
+.phase:hover {
+    background-color: rgba(173, 189, 230, 0.357);
+    display: flex;
+    padding: 1em;
+    transition: 0.3s;
+}
+
+.p-title {
+    width: 50%;
+    text-align: center;
+}
+
+.top-title {
+    text-align: center;
+    margin: 1em;
+}
+
+.description {
+    width: 50%;
+    text-align: right;
+    padding: 12px;
+}
+
+.middle-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.attn-btn {
+    border: solid black;
+    margin: 1em;
+    text-align: center;
+    width: 20%;
+    border-radius: 22px;
+    border-color: aliceblue;
+    background-color: rgb(87, 89, 87);
+    color: aliceblue;
+    padding: 2px;
+    margin: 0vw;
+}
+
+.attn-btn:hover {
+    border: solid black;
+    margin: 1em;
+    text-align: center;
+    width: 20%;
+    border-radius: 22px;
+    border-color: rgb(205, 206, 207);
+    background-color: rgb(63, 63, 63);
+    color: aliceblue;
+    transition: 1s;
+}
