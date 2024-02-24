@@ -11,20 +11,35 @@
     </head>
     <body>
 
-        <!-- Nine Areas of Attention -->
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="navigation-div" id="home">
+                <div class="list-div">
+                    <ul class="list">
+                        <li class="list-item" href="#top-container">Project Management</li>
+                        <li class="list-item" href="#sdlc-container">Software Development Lifecycle</li>
+                        <li class="list-item" href="#stlc-container">Software Testing Life Cycle</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
         <!-- Top Container -->
-        <div class="top-container">
+        <div class="top-container" id="top-container">
 
-            <h3 class="top-title">4 Phases Of Product Management</h3>
+            <!-- Overlay -->
+ 
+            <div id="insert" onclick="removeOverlay()"></div>
+
+            <!-- Nine Areas of Attention -->
+            <h3 class="top-title" id="top-title">4 Phases Of Product Management</h3>
             <!-- Four Phases -->
-            <div class="phase-container">
+            <div class="phase-container" id="p-container">
         
-                <div class="phase">
-
-                    <h3 class="p-title">
-                        Planning
-                    </h3>
+                <div class="phase" id="Planning">
+                    <div>
+                        <h3 class="p-title">Planning</h3>
+                    </div>
 
                     <div class="description">
                         Determine the viability of the 
@@ -32,43 +47,82 @@
                         of pay, and plan the control of the 
                         project.
                     </div>
+
+                    <div class="information">
+                        Determine the viability of the proposal.<br> 
+                        Will the final product create enough value to pay for the project<br>
+                        costs and give the organization enough benefit<br>
+                        (return on investment) to make the effort worthwhile?<br>
+                        Get the Project Charter signed off to have organizational<br> 
+                        commitment to support and pay for the project.<br>
+                        Plan out project activities. <br>
+                        Ensure that the project is going to be controllable.<br>
+    
+                    </div>
                 </div>
                     
            
-                <div class="phase">
-
-                    <h3 class="p-title">
-                        Execution
-                    </h3>
+                <div class="phase" id="Execution">
+                    <div>
+                        <h3 class="p-title">Execution</h3>
+                    </div>
 
                     <div class="description">
                         Plan the specifics of the project,
                         and perform all activities to 
                         complete a successful project.
                     </div>
+
+                    <div class="information">
+                        Collect and plan specific requirements of the deliverables.<br>
+                        Create a blueprint to detail the build.<br>
+                        Create a prototype and perform all testing.<br>
+                        Provide training, manuals, and documentation for customers/users.<br>
+                        Turn over all implementable components to the release process.<br>
+    
+                    </div>
+
                 </div>
                         
-                <div class="phase">
-
-                    <h3 class="p-title">
-                        Implementation
-                    </h3>
-
+                <div class="phase" id="Implementation">
+                    <div>
+                        <h3 class="p-title">Implementation</h3>
+                    </div>
                     <div class="description">
                         Go live with the project work
                         product
                     </div>
+
+                    <div class="information">
+                        Prepare the product to be placed into the live environment.<br>
+                        Execute a knowledge transfer plan to ensure support personnel<br>
+                        are ready to support the end-user.<br>
+                        Notify the customer/user community as to<br> 
+                        the availability of the new product or service.<br>
+                        Provide support to operations staff and user community<br>
+                        as the service is readied for actual usage.
+    
+                    </div>
+
                 </div>
                             
-                <div class="phase">
-
-                    <h3 class="p-title">
-                        Closure
-                    </h3>
+                <div class="phase" id="Closure">
+                    <div>
+                        <h3 class="p-title">Closure</h3>
+                    </div>
 
                     <div class="description">
                         Complete the documentation 
                     </div>
+
+                    <div class="information">
+                        Finalize documentation for future needs.<br>
+                        Pay all outstanding invoices.<br>
+                        Validate customer acceptance and satisfaction.<br>
+                        Perform additional activities required to close out the project.
+    
+                     </div>
+
                 </div>
                     
            
@@ -78,8 +132,8 @@
 
 
         <!-- Middle Container -->
-     <div class="middle-container">
-        <div><h3 class="top-title">Nine Areas of Attention</h3></div>
+     <div class="middle-container" id="middle-container">
+        <div><h3 class="nine-title">Nine Areas of Attention</h3></div>
 
         <div class="all-btn-div">
 
@@ -108,7 +162,7 @@
                     </div>
                     <div class="issues-description">
                     
-                <ul>
+                <ul class="">
                     <li>Focused on the present</li>
                     <li>Always negative</li>
                     <li>Documented in Issue Register</li>
@@ -140,9 +194,68 @@
             </div>
 
         </div>
-        <!--  -->
+        <!-- RACI container -->
+        <div class="fourth-container" id="fourth-container">
 
-        <!--  -->
+            <div class="raci-container">
+
+                <!--RACI Title-->
+
+                <div class="raci-title">
+                    <h3 class="r-title">RACI Assignment Matrix</h3>
+                </div>
+
+                <!--RACI div-->
+
+                <div class="raci-div" id="raci-div">
+                    <div class="raci" id="r">
+                        <!-- R -->
+                        <div class="letter">
+                            <p>R</p>
+                        </div>
+                        <div class="raci-description">
+                            <p><b><u>Responsible</u></b> for correct execution</p>
+                        </div>
+                    </div>
+                    <div class="raci" id="a">
+                        <!-- A -->
+                        <div class="letter">
+                            <p>A</p>
+                        </div>
+                        <div class="raci-description">
+                            <p><b><u>Accountable</u></b> for final result</p>
+                        </div>
+                    </div>
+                    <div class="raci" id="c">
+                        <!-- C -->
+                        <div class="letter">
+                            <p>C</p>
+                        </div>
+                        <div class="raci-description">
+                            <p><b><u>Consulted</u></b> to provide additional knowledge and information</p>
+                        </div>
+                    </div>
+                    <div class="raci" id="i">
+                        <!-- I -->
+                        <div class="letter">
+                            <p>I</p>
+                        </div>
+                        <div class="raci-description">
+                            <p><b><u>Informed</u></b> or kept up to date regarding progress</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SDLC Container -->
+        <div class="sdlc-container" id="sdlc-container"></div>
+
+        <!-- STLC Container -->
+        <div class="stlc-container" id="stlc-container"></div>
+
         
         <script src="app.js" async defer></script>
     </body>

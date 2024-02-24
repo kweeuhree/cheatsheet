@@ -8,6 +8,24 @@
     background-color:rgba(192, 192, 232, 0.149);
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.overlay {
+    background-color: rgba(173, 189, 230, 0.357);
+    width:40%;
+    font-size: 1.3vw;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 0.5em;
+    z-index: 10;
+    padding-left:2em;
+    padding-top:2em;
+    padding-bottom: 2em;
+}
+
+.information {
+    display: none;  
 }
 
 .top-title {
@@ -17,20 +35,25 @@
 }
 
 .phase-container {
-    width: 80%;
-    border: 1px solid rgba(192, 192, 232, 0.449);;
+    min-width: 55%;
+    max-width: 55%;
+    border: 1px solid rgba(192, 192, 232, 0.449);
+
 }
 
 /* Phase */
 
 .p-title {
-    width: 50%;
+    width: 30%;
     text-align: center;
     color: rgba(7, 7, 40, 0.749);
 }
 
 .phase {
+    width:100%;
     display: flex;
+    gap: 10%;
+    justify-content: space-around;
     transition: 0.2s;
 }
 
@@ -65,6 +88,11 @@
     justify-content: space-evenly;
 }
 
+.nine-title {
+    margin: 2em;
+    text-align: center;
+}
+
 /* Button divs*/
 
 .all-btn-div {
@@ -73,8 +101,9 @@
     flex-wrap: wrap;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 80%;
+    justify-content:center;
+    width: 70%;
+    height: 90%;
 }
 
 .btn-div:hover {
@@ -88,11 +117,11 @@
 
 .attn-btn {
     border: solid black;
-    margin: 0.8em;
+    margin: 0.5em;
     text-align: center;
     font-size: 1.8vw;
-    width: 12vw;
-    height: 12vw;
+    width: 10vw;
+    height: 10vw;
     border-radius: 50%;
     border-color: aliceblue;
     background-color: rgb(87, 89, 87);
@@ -141,10 +170,85 @@
 
 .issues-description {
     padding:0.3em;
+    font-size: smaller;
     background-color: rgba(252, 236, 208, 0.365);
 }
 
 .risks-description {
     padding:0.3em;
+    font-size: smaller;
     background-color: rgba(255, 219, 219, 0.365);
+}
+
+/* RACI container */
+
+.fourth-container {
+    border: 1px solid rgba(254, 213, 213, 0.365);
+    background-color: rgba(254, 213, 213, 0.165);
+    margin:1em;
+    
+}
+
+.raci-container {
+    /* border: solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.raci-title {
+    /* border: solid salmon; */
+    margin: 1em;
+}
+
+.r-title {
+    /* border: solid pink; */
+    color: rgba(34, 14, 3, 0.9);
+    margin: 2em;
+    text-align: center;
+}
+
+.raci-div {
+    border: 1px solid rgba(254, 213, 213, 0.365);
+    margin: 1em;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.raci {
+    display: flex;
+    align-items:center;
+}
+
+.letter {
+    text-align: center;
+    font-size: 3vw;
+    min-width: 1em;
+    height: 13vh;
+    margin-right: 0.3em;
+    margin-left: 0.3em;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    background-color: rgba(254, 213, 213, 0.265);
+    border-radius: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.raci-description {
+    font-size: larger;
+}
+
+.raci-move-right {
+    animation: move 1s;
+}
+
+@keyframes move {
+    0% {margin-left: 0;}
+    50% {margin-left: 1vw;}
+    100%{margin-left: 0;}
 }
