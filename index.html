@@ -8,17 +8,26 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        
     </head>
     <body>
 
+    <div class="linear-gradient">
+        
         <!-- Navigation Bar -->
         <nav>
             <div class="navigation-div" id="home">
                 <div class="list-div">
                     <ul class="list">
-                        <li class="list-item" href="#top-container">Project Management</li>
-                        <li class="list-item" href="#sdlc-container">Software Development Lifecycle</li>
-                        <li class="list-item" href="#stlc-container">Software Testing Life Cycle</li>
+                        <li class="list-item">
+                            <a href="#top-container">Project Management</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#sdlc-container">Software Development Lifecycle</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#stlc-container">Software Testing Life Cycle</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -32,13 +41,13 @@
             <div id="insert" onclick="removeOverlay()"></div>
 
             <!-- Nine Areas of Attention -->
-            <h3 class="top-title" id="top-title">4 Phases Of Product Management</h3>
+            <h1 class="top-title" id="top-title">4 Phases Of Product Management</h1>
             <!-- Four Phases -->
             <div class="phase-container" id="p-container">
         
                 <div class="phase" id="Planning">
                     <div>
-                        <h3 class="p-title">Planning</h3>
+                        <h2 class="p-title">Planning</h2>
                     </div>
 
                     <div class="description">
@@ -64,7 +73,7 @@
            
                 <div class="phase" id="Execution">
                     <div>
-                        <h3 class="p-title">Execution</h3>
+                        <h2 class="p-title">Execution</h2>
                     </div>
 
                     <div class="description">
@@ -86,7 +95,7 @@
                         
                 <div class="phase" id="Implementation">
                     <div>
-                        <h3 class="p-title">Implementation</h3>
+                        <h2 class="p-title">Implementation</h2>
                     </div>
                     <div class="description">
                         Go live with the project work
@@ -108,7 +117,7 @@
                             
                 <div class="phase" id="Closure">
                     <div>
-                        <h3 class="p-title">Closure</h3>
+                        <h2 class="p-title">Closure</h2 >
                     </div>
 
                     <div class="description">
@@ -133,7 +142,7 @@
 
         <!-- Middle Container -->
      <div class="middle-container" id="middle-container">
-        <div><h3 class="nine-title">Nine Areas of Attention</h3></div>
+        <div><h1 class="nine-title">Nine Areas of Attention</h1 ></div>
 
         <div class="all-btn-div">
 
@@ -202,7 +211,7 @@
                 <!--RACI Title-->
 
                 <div class="raci-title">
-                    <h3 class="r-title">RACI Assignment Matrix</h3>
+                    <h1 class="r-title">RACI Assignment Matrix</h1>
                 </div>
 
                 <!--RACI div-->
@@ -255,8 +264,9 @@
 
         <!-- STLC Container -->
         <div class="stlc-container" id="stlc-container"></div>
-
-        
+       
+        <!-- end of linear gradient -->
+    </div> 
         <script src="app.js" async defer></script>
     </body>
 </html>
