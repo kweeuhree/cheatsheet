@@ -8,8 +8,8 @@ In 'Nine Areas of Attention' section each Attention Button is listening for a cl
 
 In the section about Issues and Risks JavaScript is listening for 'mouseenter' and 'mouseleave' events changing background color to more color and back.
 
-Functions showOverlay and removeOverlay show additional information onclick of a clickable element in sections Project Management, Software Development Life Cycle and Software Testing Life Cycle. 
-showOverlay function takes two parameters: id of a clicked element and id of the element additional information is being inserted into.
+Functions showOverlay and removeOverlay show additional information onclick of a clickable element in sections 'Project Management', 'Software Development Life Cycle' and 'Software Testing Life Cycle'.<br>
+showOverlay function takes two parameters: id of a clicked element and id of the element additional information is being inserted into.<br>
 removeOverlay function takes three parameters: insert element id, overlay id and id of original title of div.
 
 
