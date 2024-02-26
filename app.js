@@ -49,13 +49,14 @@ function leaveLowContainer() {
     risksDiv.style.backgroundColor = 'transparent';
 }
 
-
-// add raciMoveRight using event delegation
+// add raciMoveRight 
 
 function raciMoveRight(id) {
     let raci = document.getElementById(id);
     raci.classList.add('raci-move-right');
 }
+
+// Listen for mouseover event in RACI section
 
 document.getElementById('raci-div').addEventListener('mouseover', function(event) {
     if (event.target.classList.contains('raci-description')) {
@@ -63,37 +64,79 @@ document.getElementById('raci-div').addEventListener('mouseover', function(event
     }
 })
 
-// in phase container, listen if a phase was clicked on
-// clicked phase sends id to a function
-// function shows phases information in the title area
 
+// Listen for a click on each of Phases, onclick show overlay
 const phases = document.getElementsByClassName('phase');
 
-for (let i = 0; i < phases.length; i++) {[
+for (let i = 0; i < phases.length; i++) {
     phases[i].addEventListener('click', function(event) {
-        showOverlay(this.id)
+        showOverlay(this.id, 'insert') // pass event target & overlay id
     })
-]}
+}
 
-function showOverlay(id) {
-    const phase = document.getElementById(id);
-    const information = phase.querySelector('.information');
-    const topTitle = document.getElementById('top-title');
-    const insert = document.getElementById('insert');
+// Listen for a click on each of sldcPhases, onclick show overlay
 
+const sldcPhases = document.getElementsByClassName('sldc-phase');
+
+for (let i = 0; i < sldcPhases.length; i++) {
+    sldcPhases[i].addEventListener('click', function(event) {
+        showOverlay(this.id, 'sldc-insert'); // pass event target & overlay id
+    })
+}
+
+// Listen for a click on each of SLTC sequences, onclick show overlay
+
+const sequences = document.getElementsByClassName('sltc-sequence');
+
+for (let i = 0; i < sequences.length; i++) {
+    sequences[i].addEventListener('click', function(event) {
+        showOverlay(this.id, 'sltc-insert');
+    })
+}
+
+// showOverlay function
+
+function showOverlay(id, insertId) {
+
+    // get the element that was clicked on and its class
+    const clickedElement = document.getElementById(id);
+    const classOfElement = clickedElement.classList[0];
+
+    // get information section of clicked element
+    const information = clickedElement.querySelector(`.${classOfElement}-information`);
+
+    // get top title and insert
+    const topTitle = document.getElementById(`${classOfElement}-title`);
+    const insert = document.getElementById(insertId);
+
+    // null top title content and show overlay
     topTitle.innerHTML = '';
+    insert.classList.add(`${classOfElement}-overlay`);
+    
+    // display information
     insert.innerHTML = information.innerHTML;
-    insert.classList.add('overlay');
-
 }
 
-function removeOverlay() {
-    const overlay = document.querySelector('.overlay');
-    const topTitle = document.getElementById('top-title');
-    const insert = document.getElementById('insert');
+// Remove overlay function
 
-    insert.classList.remove('overlay');
-    insert.innerHTML = '';
-    topTitle.innerHTML = "4 Phases Of Product Management";
+function removeOverlay(insertId, overlay, titleId) {
 
+    // get insert id and title id
+    const insert = document.getElementById(insertId); 
+    const topTitle = document.getElementById(titleId);
+
+    // get original top title
+    const titleString = topTitle.getAttribute('data-info');
+    
+    insert.innerHTML = ''; // stop showing information
+    insert.classList.remove(overlay); // remove overlay
+    topTitle.innerHTML = titleString; // reset title
 }
+
+
+
+
+
+
+
+

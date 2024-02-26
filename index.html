@@ -26,7 +26,7 @@
                             <a href="#sdlc-container">Software Development Lifecycle</a>
                         </li>
                         <li class="list-item">
-                            <a href="#stlc-container">Software Testing Life Cycle</a>
+                            <a href="#stlc-section">Software Testing Life Cycle</a>
                         </li>
                     </ul>
                 </div>
@@ -38,10 +38,10 @@
 
             <!-- Overlay -->
  
-            <div id="insert" onclick="removeOverlay()"></div>
+            <div id="insert" onclick="removeOverlay('insert', 'phase-overlay','phase-title')"></div>
 
             <!-- Nine Areas of Attention -->
-            <h1 class="top-title" id="top-title">4 Phases Of Product Management</h1>
+            <h1 class="phase-title" id="phase-title" data-info="4 Phases Of Product Management">4 Phases Of Product Management</h1>
             <!-- Four Phases -->
             <div class="phase-container" id="p-container">
         
@@ -57,7 +57,7 @@
                         project.
                     </div>
 
-                    <div class="information">
+                    <div class="phase-information">
                         Determine the viability of the proposal.<br> 
                         Will the final product create enough value to pay for the project<br>
                         costs and give the organization enough benefit<br>
@@ -82,7 +82,7 @@
                         complete a successful project.
                     </div>
 
-                    <div class="information">
+                    <div class="phase-information">
                         Collect and plan specific requirements of the deliverables.<br>
                         Create a blueprint to detail the build.<br>
                         Create a prototype and perform all testing.<br>
@@ -102,7 +102,7 @@
                         product
                     </div>
 
-                    <div class="information">
+                    <div class="phase-information">
                         Prepare the product to be placed into the live environment.<br>
                         Execute a knowledge transfer plan to ensure support personnel<br>
                         are ready to support the end-user.<br>
@@ -124,7 +124,7 @@
                         Complete the documentation 
                     </div>
 
-                    <div class="information">
+                    <div class="phase-information">
                         Finalize documentation for future needs.<br>
                         Pay all outstanding invoices.<br>
                         Validate customer acceptance and satisfaction.<br>
@@ -260,10 +260,448 @@
         </div>
 
         <!-- SDLC Container -->
-        <div class="sdlc-container" id="sdlc-container"></div>
+        <div class="sdlc-container" id="sdlc-container">
 
-        <!-- STLC Container -->
-        <div class="stlc-container" id="stlc-container"></div>
+            <!-- Introduction -->
+            <div class="introduction">
+                <h2>
+                    The Software Development Life Cycle (SDLC) is a process used 
+                    by the software industry to produce<br> high-quality systems that 
+                    meet or exceed the customer's expectations. 
+                </h2>
+            </div>
+
+            <!-- What SDLC looks like -->
+
+             <!-- Phases of SDLC Container -->
+             <div class="sldc-phases-container">
+
+                <div class="sldc-insert" id="sldc-insert" onclick="removeOverlay('sldc-insert', 'sldc-phase-overlay', 'sldc-phase-title')"></div>
+
+                <div class="sldc-container-title">
+                    <h1 id="sldc-phase-title" data-info="Phases of Software Development">Phases of Software Development</h1>
+                </div>
+
+                <!-- Phases of SDLC -->
+                <div class="sldc-phases">
+
+                    <!-- Business Analysis; Requirements Analysis -->
+                    <div class="sldc-phase" id="sldc-business">
+                        <div class="sldc-phase-clickable">
+                            Business Analysis; Requirements Analysis
+                        </div>
+                        <div class="sldc-phase-information">
+            <div class="info-style">
+                Identify the Current State - Where are we now?<br> 
+                First part is <u><b>Business Analysis</b></u>.<br>
+                Understanding the current state allows us to identify the needs that need to be fulfilled by our project.<br> 
+                <br>
+                The second half of analysis is the <u><b>Requirements Analysis</b></u> or <u><b>Requirements Gathering</b></u>.<br>
+                Customer describes what they want and how they want it used.<br>
+                Failure in this stage will result in incomplete or mis-directed work in all following stages.<br>
+                <br>
+            </div>    
+            <div class="info-style">
+                Customers will ask for what they want.<br>
+                We need to have a clear understanding of:<br>
+                - what we want to have (desire to have - initial plans);<br>
+                - what we must have (absolutely necessary);<br>
+                - what is extra (not expected enhancements).<br>
+                <br><br>
+                <u><b>MVP</b></u> - Mininmum Viable Product<br>
+                <br>
+                Plan maintenance from the beginning!
+            </div>
+
+                </div>                  
+
+                    </div>
+                    
+                    <!-- Design -->
+                    <div class="sldc-phase" id="sldc-design">
+                        <div class="sldc-phase-clickable">
+                            Design
+                        </div>
+                        <div class="sldc-phase-information">
+        <div class="info-style">
+        In most cases, the design phase will include the development of a prototype model.<br> 
+        Creating a pre-production version of the product can give the team the opportunity 
+        to visualize what the product will look like and make changes without having to go 
+        through the hassle of rewriting code.
+        <br>
+        </div>
+        <div class="info-style">
+    <u><b>High-Level Design</b></u> - lists the functional aspects of the various modules, 
+        along with the final result.<br>
+        <br>
+    <u><b>Low-Level Design</b></u> - details the logic and execution of each module in an HLD.
+        </div>
+                        </div>    
+                    </div>
+
+                    <!-- Development/ Coding -->
+                    <div class="sldc-phase" id="sldc-develop">
+                        <div class="sldc-phase-clickable">
+                            Development/ Coding
+                        </div>
+                        <div class="sldc-phase-information">
+        <div class="info-style">
+        Before starting to code, teams must have clear predefined guidelines 
+        to ensure the code's quality.<br> 
+        In this phase, developers start building the entire system and shaping 
+        the project.<br>
+        <br>
+        Depending on each team's model, the phase may be conducted in:<br>
+         sprints <em>(Agile)</em> or a single block <em>(Waterfall)</em>. 
+        The majority of times, teams spend most of their time during this phase 
+        to ensuring that 
+        the application will work efficiently.
+        </div>
+        <div class="info-style">
+        This SDLC phase can take quite a lot of time and specialized development 
+        tools.<br> 
+        It's important to have a set timeline and milestones so the software 
+        developers understand the expectations and you can keep track of the 
+        progress in this stage.
+        <br>
+        Software quality is best determined by how well the software 
+        meets the requirements.
+        </div>
+                        </div>    
+                    </div>
+
+                    <!-- Testing -->
+                    <div class="sldc-phase" id="sldc-test">
+                        <div class="sldc-phase-clickable">
+                            Testing
+                        </div>
+                        <div class="sldc-phase-information">
+        <div class="info-style">
+
+        Different types of testing occur, such as:<br>
+    <u><b>Load testing</b></u> is performed to determine a system's behavior under both 
+        normal and anticipated peak load conditions.<br>
+    <u><b>Performance testing</b></u> determines how the stability, speed, scalability, 
+        and responsiveness of an application holds up under a given workload.<br>
+    <u><b>Compatibility search</b></u> verifies that your product/software works efficiently 
+        in its intended environments.<br>
+    <u><b>Performance testing</b></u> Assesses the software's speed and scalability under 
+        different conditions<br>
+    <u><b>Functional testing</b></u> Verifies that the software meets the requirements<br>
+    <u><b>Security testing</b></u>: Identifies potential vulnerabilities and weaknesses<br>
+    <u><b>Unit-testing</b></u> Tests individual units or components of the software<br>
+    <u><b>Usability testing</b></u> Evaluates the software's user interface and overall 
+        user experience<br>
+    <u><b>Acceptance testing</b></u> Also termed end-user testing, beta testing, 
+        application testing, or field testing, this is the final testing stage 
+        to test if the software product delivers on what it promises.
+        </div>
+        <div class="info-style">
+        Often, testing happens in parallel with development, as developers 
+        write and test the code they've produced before moving on to the next 
+        coding task.
+        <br>
+        Running testing in parallel with development means that bugs can be fixed 
+        within the same sprint or time block, which is more efficient than adding 
+        a whole block of coding to be done at the end of the project.<br> 
+        It also mitigates the trouble of bug fixes generating new bugs themselves.
+    </div>
+                        </div>    
+                    </div>
+
+                    <!-- Deployment -->
+                    <div class="sldc-phase" id="sldc-deploy">
+                        <div class="sldc-phase-clickable">
+                            Deployment
+                        </div>
+                        <div class="sldc-phase-information">
+        <div class="info-style-single">
+        The deployment process starts once the testing phase is over and there are
+        no bugs or errors in the development backlog. 
+        <br>
+        The team makes sure that the software is up-to-date and it's secure 
+        enough for users and pushes it from the development environment to 
+        a live environment - usually an app store.
+        <br>
+        During this phase, the tech support team looks for user feedback and 
+        ensures it reaches the dev team.
+        </div>
+                        </div>    
+                    </div>
+
+                    <!-- Maintenance -->
+                    <div class="sldc-phase" id="sldc-maintain">
+                        <div class="sldc-phase-clickable">
+                            Maintenance
+                        </div>
+                        <div class="sldc-phase-information">
+        <div class="info-style-single">
+        The maintenance phase of the SDLC occurs after the product is in full 
+        operation. <br>
+        Maintenance of software can include software upgrades, repairs, and fixes 
+        of the software if it breaks. <br>
+        Software applications often need to be upgraded or integrated with 
+        new systems the customer deploys.
+        </div>
+                        </div>    
+                    </div>
+
+                </div>
+
+             </div>
+
+        </div>
+
+        <!-- STLC Section-->
+        <div class="stlc-section" id="stlc-section">
+
+
+            <!-- Introduction -->
+            <div class="introduction sltc-introduction">
+                <h2>
+        The Software Testing Life Cycle (STLC) is a sequence of 
+        activities conducted to perform software testing. It consists 
+        of a series of activities carried out methdologically to help 
+        certify the software product.
+                </h2>
+            </div>
+
+    <!-- SLTC container -->
+
+    <div class="sltc-container">
+            
+        <!-- SLTC container  insert -->
+        <div class="sltc-insert" id="sltc-insert" onclick="removeOverlay('sltc-insert','sltc-sequence-overlay', 'sltc-sequence-title')"></div>
+
+        <!-- SLTC container title -->
+        <div class="sltc-container-title">
+            <h1 id="sltc-sequence-title" data-info="Software Testing Life Cycle">Software Testing Life Cycle</h1>
+        </div>
+
+        <!-- SLTC sequences -->
+        <div class="sltc-sequences">
+
+            <!-- Requirements Analysis -->
+            <div class="sltc-sequence" id="sltc-require">
+
+                <!-- SLTC sequence clickable -->
+                <div class="sltc-sequence-clickable">
+                    Requirements Analysis
+                </div>
+
+                <!-- SLTC sequence information -->
+                <div class="sltc-sequence-information">
+
+                    <div class="info-style">
+During the <b>Requirement Analysis</b> phase, the test team studies the requirements from a 
+testing point of view to identify the testable requirements.<br>
+ The quality assurance (QA) team may interact with various 
+ stakeholders (e.g., client, business analyst, technical leads, 
+ system architects, etc.) to understand the requirements in detail. 
+ <br>
+ Requirements could be either functional 
+ (defining what the software must do) or non-functional 
+ (defining system performance/security availability).
+ <br>
+Automation feasibility for the given testing project is also performed during
+this stage.<br>
+<br> 
+
+<b>What Is Proof of Concept (POC)?</b><br>
+Proof of concept is evidence obtained from a pilot project, 
+which is executed to demonstrate that a product idea, 
+business plan, or project plan is feasible. <br>
+For example, in drug development, clinical trials are used to 
+determine whether a new drug will be safe and effective, 
+thus gathering proof of concept for a final product. 
+The results of a proof of concept are gathered in a proof of 
+concept document that helps stakeholders better understand 
+what the proof of concept success criteria are.
+
+</div>
+<div class="info-style">
+  <ul><u>Activities</u></ul>
+<li>Identify the types of tests to be performed.</li>
+<li>Gather details about testing priorities and focus.</li>
+<li>Prepare Requirement Traceability Matrix (RTM).</li>
+<li>Identify test environment details where testing is supposed to be carried out.</li>
+<li>Perform automation feasibility analysis (if required).</li>
+
+<ul><u>Deliverables</u></ul>
+<li>RTM.</li>
+<li>Automation feasibility report (if applicable).</li>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Test Planning -->
+            <div class="sltc-sequence" id="sltc-test-plan">
+
+                <!-- SLTC sequence clickable -->
+                <div class="sltc-sequence-clickable">Test Planning</div>
+
+                <!-- SLTC sequence information -->
+                <div class="sltc-sequence-information">
+                    <div class="info-style">
+    Typically, in this stage, a senior QA manager manager will 
+    determine effort and cost estimates for the project and 
+    prepare and finalize the test plan.
+    <br><br>
+    <u>Testing Tools:</u><br>
+Selenium: Used for testing web applications by automating browser interactions.<br>
+Cypress: A modern web testing framework for end-to-end testing.<br>
+Appium: For mobile app testing on Android and iOS platforms.<br>
+TestCafe: A cross-browser functional testing framework.<br>
+Robot Framework: A generic open-source automation framework for acceptance testing and robotic process automation (RPA).
+
+   
+</div>
+<div class="info-style">
+    <ul><u>Activities</u></ul>
+    <li>Preparation of test plan/strategy document for various types of testing.</li>
+    <li>Test tool selection.</li>
+    <li>Test effort estimation.</li>
+    <li>Resource planning and determination of roles and responsibilities.</li>
+    <li>Training requirements.</li>
+    
+    <ul><u>Deliverables</u></ul>
+    <li>Test plan /strategy document.</li>
+    <li>Effort estimation document.</li>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Test Case Development -->
+            <div class="sltc-sequence" id="sltc-test-case">
+
+                <!-- SLTC sequence clickable -->
+                <div class="sltc-sequence-clickable">Test Case Development</div>
+
+                <!-- SLTC sequence information -->
+                <div class="sltc-sequence-information">
+                    <div class="info-style-single">
+                        
+The Test Case Development phase involves creation, verification, and rework of test cases and test scripts. Test data, is identified/created, and reviewed, and is then reworked. 
+
+<ul><u>Activities</u></ul>
+<li>Create test cases and automation scripts (if applicable).</li>
+<li>Review and baseline test cases and scripts.</li>
+<li>Create test data (if test environment is available).</li>
+
+<ul><u>Deliverables</u></ul>
+<li>Test cases/scripts.</li>
+<li>Test data.</li>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Test Environment Setup -->
+            <div class="sltc-sequence" id="sltc-test-setup">
+
+                <!-- SLTC sequence clickable -->
+                <div class="sltc-sequence-clickable">Test Environment Setup</div>
+
+                <!-- SLTC sequence information -->
+                <div class="sltc-sequence-information">
+                    <div class="info-style-single">
+The Test Environment Setup decides the software and hardware conditions under which a work product is
+tested. The test environment setup is one of the critical aspects of the testing process and can be done
+in conjunction with the Test Case Development Stage. 
+
+Test teams may not be involved in this activity if the customer/development team provides the test environment; in which case, the test team is required to do a readiness check (smoke testing) of the given environment. 
+
+  <ul><u>Activities</u></ul>
+<li>Understand the required architecture and environment setup, and prepare hardware and software requirements list for the test environment.</li>
+<li>Set up test environment and test data.</li>
+<li>Perform smoke test on the build.</li>
+
+<ul><u>Deliverables</u></ul>
+<li>Test environment with data.</li>
+<li>Smoke test results.</li>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Test Execution -->
+            <div class="sltc-sequence" id="stlc-test-exec">
+
+                <!-- SLTC sequence clickable -->
+                <div class="sltc-sequence-clickable">Test Execution</div>
+
+                <!-- SLTC sequence information -->
+                <div class="sltc-sequence-information">
+                    <div class="info-style">
+During this phase, the testers will carry out the testing based on
+ the test plans and the test cases prepared. Bugs will be reported
+  back to the development team for correction and retesting will 
+  be performed.
+<br><br>
+<b>Why Regression Testing?</b>
+<br>
+There is a <b>need for regression testing</b> whenever the code is 
+changed, and you need to determine whether the modified code will 
+affect other parts of the software application.<br>
+Moreover, regression testing is needed when a new feature is 
+added to the software application. Regression tests may also be 
+performed when a functional or performance defect/issue is fixed.
+
+                    </div>
+                    <div class="info-style">
+<ul><u>Activities</u></ul>
+<li>Execute tests as per Test Plan.</li>
+<li>Document test results and log defects for failed test cases.</li>
+<li>Map defects to test cases in RTM.</li>
+<li>Retest the defects submitted and fixed by the development group.</li>
+<li>Track the defects to closure.</li>
+
+<ul><u>Deliverables</u></ul>
+<li>Completed RTM.</li>
+<li>Test cases with results.</li>
+<li>Defect report.</li>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Test Cycle Closure -->
+            <div class="sltc-sequence" id="sltc-closure">
+
+                <!-- SLTC sequence clickable -->
+                <div class="sltc-sequence-clickable">Test Cycle Closure</div>
+
+                <!-- SLTC sequence information -->
+                <div class="sltc-sequence-information">
+ <div class="info-style">
+    The testing team will meet, and discuss and analyze testing artifacts to identify strategies that have to be
+    implemented in the future, taking lessons from the current test cycle. The idea is to remove the
+    process bottlenecks for future test cycles and share best practices for any similar, future projects.       
+     </div> 
+     <div class="info-style">          
+<ul><u>Activities</u></ul>
+<li>Evaluate cycle completion criteria based on time, test coverage, cost, software, critical
+    business objectives, and quality.</li>
+<li>Prepare test metrics based on the cycle completion criteria.</li>
+<li>Document the learning out of the project.</li>
+<li>Prepare test closure report.</li>
+<li>Provide qualitative and quantitative report of quality to the customer.</li>
+<li>Test the results analysis for the defect distribution by type and severity.</li>
+
+<ul><u>Deliverables</u></ul>
+<li>Test Closure report.</li>
+<li>Test metrics.</li>
+</div>
+                        </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+        </div>
+
+        </div>
        
         <!-- end of linear gradient -->
     </div> 
