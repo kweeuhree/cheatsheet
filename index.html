@@ -28,6 +28,9 @@
                         <li class="list-item">
                             <a href="#stlc-section">Software Testing Life Cycle</a>
                         </li>
+                        <li class="list-item">
+                            <a href="#scrum-section">Scrum Process</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -701,7 +704,268 @@ performed when a functional or performance defect/issue is fixed.
 
         </div>
 
-        </div>
+        <!-- Scrum Section -->
+        <section id="scrum-section">
+
+        <!-- Scrum Container -->
+        <div class="scrum-container" id="scrum-container">
+
+            <div 
+                class="scrum-insert" 
+                id="scrum-insert" 
+                onclick="removeOverlay('scrum-insert', 'scrum-role-overlay', 'scrum-role-title')">
+            </div>
+
+            <!-- Scrum Segment - Roles -->
+            <div class="scrum-segment roles" id="scrum-roles">
+
+                <div class="container-segment-title"><h3>Scrum Roles</h3></div>
+
+                <!-- Scrum Role - Scrum Team -->
+                <div class="scrum-role" id="scrum-role-team">
+
+                    <div class="title-in-scrum">
+                        <h1 class="scrum-role-title" data-info="Scrum Team">
+                            Scrum Team
+                        </h1>
+                    </div>
+
+                    <div class="scrum-role-information"></div>
+                </div>
+
+                <!-- Scrum Role - Product Owner -->
+                <div class="scrum-role" id="scrum-role-prod">
+
+                    <div class="title-in-scrum">
+                        <h1 class="scrum-role-title" data-info="Product Owner">
+                            Product Owner
+                        </h1>
+                    </div>
+
+                    <div class="scrum-role-information"></div>
+                </div>
+
+                <!-- Scrum Master -->
+                <div class="scrum-role" id="scrum-role-master">
+
+                    <div class="title-in-scrum">
+                        <h1 class="scrum-role-title" data-info="Scrum Master">
+                            Scrum Master
+                        </h1>
+                    </div>
+
+                    <div class="scrum-role-information"></div>
+                </div>
+            </div>
+
+            <!-- Scrum Segment  - Key Artifacts -->
+            <div class="scrum-segment keys" id="scrum-keys">
+
+                <div class="container-segment-title"><h3>Key Artifacts</h3></div>
+
+                <!-- Scrum Key  - Key -->
+                <div class="scrum-key">
+
+                    <!-- Scrum Key  - Product Backlog -->
+                    <div class="scrum-key-title">
+                        <h1 class="key-title">Product Backlog</h1>
+                    </div>
+
+                     <!-- Scrum Key  - Key List -->
+                    <div class="key-list-div">
+                        <ul class="key-list">
+                            <li>Requirements - user stories</li>
+                            <li>Desired work</li>
+                            <li>Prioritized by Product Owner</li>
+                            <li>Anybody can add to it</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <!-- Scrum Key  - Key -->
+                <div class="scrum-key">
+
+                <!-- Scrum Key  - Sprint Goal -->
+                    <div class="scrum-key-title">
+                        <h1 class="key-title">Sprint Goal</h1>
+                    </div>
+
+                     <!-- Scrum Key  - Key List -->
+                    <div class="key-list-div">
+                        <ul class="key-list">
+                            <li>Summary of work focus in Sprint</li>
+                            <li>Declared by Product Owner</li>
+                            <li>Accepted by Team</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Scrum Key  - Key -->
+                <div class="scrum-key">
+
+                <!-- Scrum Key  - Sprint Backlog -->
+                    <div class="scrum-key-title">
+                        <h1 class="key-title">Sprint Backlog</h1>
+                    </div>
+
+                     <!-- Scrum Key  - Key List -->
+                    <div class="key-list-div">
+                        <ul class="key-list">
+                            <li>Team member chooses work - work never assigned</li>
+                            <li>Owned/managed by team</li>
+                            <li>Estimated work remaining updated daily</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Scrum Key  - Key -->
+                <div class="scrum-key">
+
+                 <!-- Scrum Key  - Block List -->
+                    <div class="scrum-key-title">
+                        <h1 class="key-title">Block List</h1>
+                    </div>
+
+                     <!-- Scrum Key  - Key List -->
+                    <div class="key-list-div">
+                        <ul class="key-list">
+                            <li>List of blocks or unmade decisions</li>
+                            <li>Owned by Scrum Master</li>
+                            <li>Updated Daily</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Scrum Key  - Key -->
+                <div class="scrum-key">
+
+                 <!-- Scrum Key  - Burndown Chart -->
+                    <div class="scrum-key-title">
+                        <h1 class="key-title">Burndown Chart</h1>
+                    </div>
+
+                     <!-- Scrum Key  - Key List -->
+                    <div class="key-list-div">
+                        <ul class="key-list">
+                            <li>Shows effort spent over period</li>
+                            <li>Stories/features complete</li>
+                        </ul>
+                    </div>
+                </div>
+
+                </div>
+
+            <!-- Scrum Segment - Ceremonies -->
+            <div class="scrum-segment ceremonies" id="scrum-ceremonies">
+
+                <div class="container-segment-title"><h3>Ceremonies</h3></div>
+
+                <!-- Scrum Ceremony - Sprint Planning -->
+                <div class="scrum-ceremony">
+
+                    <!-- Scrum Ceremony - Title -->
+                    <div class="ceremony-title">
+                        <h2>Sprint Planning</h2>
+                    </div>
+
+                    <!-- Scrum Ceremony - List -->
+                    <div class="ceremony-list-div">
+                        <ul class="ceremony-list">
+                            <li>Hosted by Scrum Master</li>
+                            <li>Highest priority items from Product Backlog become Sprint Backlog</li>
+                            <li>Estimate Sprint Backlog by effort</li>
+                            <li>Work Breakdown</li>
+                            <li>Declare Sprint Goal</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Scrum Ceremony - Daily Standup/Daily Scrum -->
+                <div class="scrum-ceremony">
+
+                    <!-- Scrum Ceremony - Title -->
+                    <div class="ceremony-title">
+                        <h2>Daily Standup/Daily Scrum</h2>
+                    </div>
+
+                    <!-- Scrum Ceremony - List -->
+                    <div class="ceremony-list-div">
+                        <ul class="ceremony-list daily-scrum">
+                            <li>Hosted by Scrum Master</li>
+                            <li>15 mins - same time each day</li>
+
+                            <!-- List in List -->
+                            <li class="ul-in-list-item">
+                                <!-- Inside List in List -->
+                                <div class="questions-ul-div">
+                                    <!-- Questions String-->
+                                    <div class="questions">
+                                        <p>Questions</p>
+                                    </div>
+                                    <!-- Questions List -->
+                                    <div>
+                                    <ul class="questions-ul">
+                                        <li>What did you do?</li>
+                                        <li>What will you do</li>
+                                        <li>What's in your way</li>
+                                    </ul>
+                                    </div>
+
+                                </div>
+
+                            </li>
+
+                            <li>Team Updates sprint backlog</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Scrum Ceremony - Sprint Review -->
+                <div class="scrum-ceremony">
+
+                    <!-- Scrum Ceremony - Title -->
+                    <div class="ceremony-title">
+                        <h2>Sprint Review</h2>
+                    </div>
+
+                    <!-- Scrum Ceremony - List -->
+                    <div class="ceremony-list-div">
+                        <ul class="ceremony-list">
+                            <li>Hosted by Scrum Master 2-4 Hours</li>
+                            <li>Accomplishments</li>
+                            <li>Entire team participates</li>
+                            <li>Features demoed for feedback</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Scrum Ceremony - Sprint Restrospective -->
+                <div class="scrum-ceremony">
+
+                    <!-- Scrum Ceremony - Title -->
+                    <div class="ceremony-title">
+                        <h2>Sprint Restrospective</h2>
+                    </div>
+
+                    <!-- Scrum Ceremony - List -->
+                    <div class="ceremony-list-div">
+                        <ul class="ceremony-list">
+                            <li>Hosted by Scrum Master 15-30 mins</li>
+                            <li>Discussions on What to "start doing", "continue doing", "stop doing"</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        
+    </div>
+    
+        </section>
        
         <!-- end of linear gradient -->
     </div> 

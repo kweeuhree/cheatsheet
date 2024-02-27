@@ -1,6 +1,6 @@
 This is a simple HTML, CSS and JavaScript page. 
 
-The content is a cheatsheet to Project Management lectures.
+The content is a cheatsheet to Project Management, SDLC and STLC lectures.
 
 Bordering each element while aligning helps me to grasp CSS flexbox.
 
