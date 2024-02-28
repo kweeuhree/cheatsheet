@@ -3,7 +3,6 @@ body {
     margin: 0;
 }
 .linear-gradient {
-    border: solid lime;
     background: linear-gradient( -65deg, #3c117053,#9f98a892,#9483b9, #9185ab, #6f6085, #3e2f53b7);
     background-size: 600% 600%;
       animation: gradient 20s linear infinite;
@@ -537,20 +536,24 @@ body {
 /* Scrum Container */
 
 .scrum-container {
-    border: solid red;
+    border: 1px solid rgba(160, 255, 113, 0.31);
+    background-color:  rgba(198, 255, 170, 0.11);
     display: flex;
     justify-content: center;
-    gap: 1vw;
     padding: 1vw;
     margin: 1vw;
 }
 
 .container-segment-title {
-    border: solid black;
+    text-align: center;
 }
 
 .scrum-segment {
-    border: solid peru;
+    border: 1px solid rgba(160, 255, 113, 0.31);
+    background-color:  rgba(198, 255, 170, 0.11);
+    margin: 1vw;
+    padding: 0.5vw;
+    color: rgba(10, 28, 1)
 }
 
 /* Scrum Container insert and overlay */
@@ -569,29 +572,100 @@ body {
 /* Scrum Container Roles*/
 
 .roles {
-    border: solid pink;
+    display: flex;
+    flex-direction: column;
+    gap:3vw;
 }
 
 .scrum-role {
-    border: solid gray;
+    border: 1px solid rgba(160, 255, 113, 0.31);
+    border-radius: 1vw;
+    margin: 1vw;
+    padding: 1vw;
+    font-size: 1.5vw;
 }
 
 .title-in-scrum {
-    border: solid yellow;
+   text-align: center;
+   line-height: 2.5vw;
 }
 
 .scrum-role-title {
-    border: solid purple;
+    /* border: solid purple; */
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 /* Scrum Container Key Artifacts */
 
 .keys {
-    border: solid orange;
+    /* border: solid orange; */
 }
 
 .scrum-key {
-    border: solid brown;
+    border: 1px solid rgba(160, 255, 113, 0.31);
+    border-left: 2vw solid rgba(160, 255, 113, 0.31);
+    margin: 1vw;
+    padding: 1vw;
+    transition: 0.5s;
 }
 
-.
+.scrum-key:hover {
+    border: 1px solid rgba(160, 255, 113, 0.31);
+    border-left: 2vw solid rgba(160, 255, 113, 0.31);
+    background-color: rgba(188, 255, 155, 0.1);
+    box-shadow: 
+        inset 0.5vw 0 0.2vw rgba(160, 255, 113, 0.15),
+        inset 1vw 0 0.2vw rgba(160, 255, 113, 0.11),
+        inset 1.2vw 0 0.2vw rgba(160, 255, 113, 0.02);
+    transition: 0.5s;
+}
+
+.scrum-key-title {
+    /* border: solid red; */
+}
+
+/* Scrum Container Ceremonies */
+
+.scrum-ceremony {
+    border: 1px solid rgba(160, 255, 113, 0.31);
+    border-radius: 1vw;
+    transition: 0.2s;
+    margin: 1vw;
+    padding: 1vw;
+}
+
+.scrum-ceremony:hover {
+    background-color:  rgba(198, 255, 170, 0.11);
+    transition: 0.2s;
+}
+
+.ceremony-title {
+    /* border: solid gray; */
+}
+
+.ceremony-list-div {
+    /* border: solid orange; */
+}
+
+.ceremony-list {
+    /* border: solid salmon; */
+}
+
+/* Scrum Ceremonies List in List*/
+
+.questions-ul-div {
+    /* border: solid yellowgreen; */
+    margin: 0.3vw;
+    display: flex;
+}
+
+.questions p {
+    margin: 0;
+    margin-top: 1vw;
+    transform: rotate(-35deg);
+}
+
+.questions-ul {
+    /* border: solid black;
+} */
